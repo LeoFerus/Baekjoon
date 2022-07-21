@@ -28,11 +28,7 @@ public class Main{
 		if(total<=0) {				//0보다 작은 경우 하루치 (86400초)를 더해준다.
 			total = total +86400;
 		}
-		if(total>86400) {		    // 24시간을 넘어간경우 하루치를 빼준다. 
-			total = total - 86400;
-		}
-		
-		
+
 		salt[0] = total/3600;
 		salt[1] = (total%3600)/60;
 		salt[2] = total%60;
